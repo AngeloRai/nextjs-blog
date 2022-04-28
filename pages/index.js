@@ -16,7 +16,8 @@ export default function Home({ allPostsData }) {
           I am a Software Engineer and life enthusiast. You can contact me on{" "}
           <Link href="https://www.linkedin.com/in/angeloraimondi/">
             Linkedin
-          </Link>
+          </Link>{" "}
+          or by email: angraimondi@gmail.com
         </p>
 
         <p>
@@ -36,11 +37,11 @@ export default function Home({ allPostsData }) {
                 <a>
                   {title}
                   <br />
-                  </a>
-                  </Link>
-                  <small className={utilStyles.lightText}>
-                    {Moment(date).format("LL")}
-                  </small>
+                </a>
+              </Link>
+              <small className={utilStyles.lightText}>
+                {Moment(date).format("LL")}
+              </small>
             </li>
           ))}
         </ul>
